@@ -1,0 +1,44 @@
+@import '../../theme/colors', '../../theme/variables';
+
+.component-carduser {
+  height: 100%;
+  background-color: $color-dark-blue;
+  border-radius: $card-radius;
+
+  .user-container {
+    background-color: $color-blue;
+    border-radius: $card-radius;
+    padding: $spacing;
+
+    img {
+      height: 70px;
+      width: 70px;
+      border-radius: 50%;
+      border: 3px solid $color-white;
+    }
+
+    label {
+      margin-top: $spacing;
+      display: block;
+    }
+  }
+
+  .options-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: $spacing;
+    padding: $spacing;
+
+    p {
+      -moz-transition: color 0.3s ease-out;
+      -o-transition: color 0.3s ease-out;
+      transition: color 0.3s ease-out;
+      cursor: pointer;
+      
+      &:not(.selected):not(:hover) {
+        color: $color-pale-blue;
+      }
+    }
+  }
+}

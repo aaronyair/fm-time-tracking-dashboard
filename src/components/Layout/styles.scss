@@ -1,0 +1,15 @@
+@import '../../theme/variables';
+
+.layout {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: ($spacing * 3) $spacing;
+
+  main {
+    width: 100%;
+    max-width: 1000px;
+  }
+}

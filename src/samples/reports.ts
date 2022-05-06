@@ -1,6 +1,7 @@
-import { Report } from '../models/reports.model';
+import { ApiReport } from '../models/reports.model';
+import { Option } from '../models/options';
 
-export const reports: Report[] = [
+export const reports: ApiReport[] = [
   {
     title: 'Work',
     timeframes: {
@@ -103,4 +104,10 @@ export const reports: Report[] = [
       },
     },
   },
+];
+
+export const options: Option[] = [
+  { value: 'daily', label: 'Daily' },
+  { value: 'weekly', label: 'Weekly' },
+  { value: 'monthly', label: 'Monthly' },
 ];

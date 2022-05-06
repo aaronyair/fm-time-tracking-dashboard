@@ -6,10 +6,15 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: ($spacing * 3) $spacing;
+  padding: ($spacing * 2) $spacing;
+
+  @media (max-width: 1000px) {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
 
   main {
     width: 100%;
-    max-width: 1000px;
+    max-width: 1110px;
   }
 }

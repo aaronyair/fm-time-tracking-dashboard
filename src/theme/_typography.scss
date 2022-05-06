@@ -1,21 +1,78 @@
-@import './colors';
+@import './colors', './variables';
+
+// Light
+@font-face {
+  font-family: $font-family;
+  src: url('./fonts/Rubik/Rubik-Light.ttf') format('truetype');
+  font-weight: $light;
+  font-display: block;
+  font-style: normal;
+}
+// Regular
+@font-face {
+  font-family: $font-family;
+  src: url('./fonts/Rubik/Rubik-Regular.ttf') format('truetype');
+  font-weight: $regular;
+  font-display: block;
+  font-style: normal;
+}
+// Medium
+@font-face {
+  font-family: $font-family;
+  src: url('./fonts/Rubik/Rubik-Medium.ttf') format('truetype');
+  font-weight: $medium;
+  font-display: block;
+  font-style: normal;
+}
+
+body {
+  font-family: $font-family, Helvetica, sans-serif;
+}
 
 h1 {
   color: $color-white;
-  margin: 0;
+  font-size: $font-size-h1;
+  font-weight: $light;
+  line-height: 1;
+  @media (max-width: 1000px) {
+    font-size: $font-size-h1-mobile;
+  }
 }
 
 h2 {
   color: $color-white;
-  margin: 0;
+  font-size: $font-size-h2;
+  font-weight: $light;
+  @media (max-width: 1000px) {
+    font-size: $font-size-h2-mobile;
+  }
+}
+
+h3 {
+  color: $color-white;
+  font-size: $font-size-h3;
+  font-weight: $medium;
+  line-height: 1;
+  @media (max-width: 1000px) {
+    font-size: $font-size-h3-mobile;
+  }
 }
 
 p {
   color: $color-white;
-  margin: 0;
+  font-size: $font-size-p;
+  font-weight: $regular;
+  line-height: 1;
+  @media (max-width: 1000px) {
+    font-size: $font-size-p-mobile;
+  }
 }
 
 label {
   color: $color-pale-blue;
-  margin: 0;
+  font-size: $font-size-label;
+  font-weight: $regular;
+  @media (max-width: 1000px) {
+    font-size: $font-size-label-mobile;
+  }
 }

@@ -1,7 +1,8 @@
-@import '../../theme/colors', '../../theme/variables';
+@import "../../theme/colors", "../../theme/variables";
 
 .component-carduser {
-  height: 100%;
+  display: flex;
+  flex-direction: column;
   background-color: $color-dark-blue;
   border-radius: $card-radius;
 
@@ -9,10 +10,11 @@
     background-color: $color-blue;
     border-radius: $card-radius;
     padding: $spacing;
+    height: 100%;
 
     img {
-      height: 70px;
-      width: 70px;
+      height: 80px;
+      width: 80px;
       border-radius: 50%;
       border: 3px solid $color-white;
     }
@@ -27,7 +29,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: $spacing;
+    gap: 20px;
     padding: $spacing;
 
     p {
@@ -35,10 +37,36 @@
       -o-transition: color 0.3s ease-out;
       transition: color 0.3s ease-out;
       cursor: pointer;
-      
+
       &:not(.selected):not(:hover) {
-        color: $color-pale-blue;
+        color: $color-desaturated-blue;
       }
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .component-carduser {
+    .user-container {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 20px;
+      
+      img {
+        height: 70px;
+        width: 70px;
+      }
+      label {
+        margin-top: 0;
+        margin-bottom: 5px;
+      }
+    }
+
+    .options-container {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
     }
   }
 }

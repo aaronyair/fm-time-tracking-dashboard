@@ -1,0 +1,64 @@
+@import "../../theme/colors", "../../theme/variables";
+
+.component-cardreport {
+  position: relative;
+  border-radius: $card-radius;
+  padding-top: 50px;
+  background-position: calc(100% - 20px) -10px;
+  background-repeat: no-repeat;
+
+  .report {
+    padding: $spacing;
+    border-radius: $card-radius;
+    background-color: $color-dark-blue;
+    height: 100%;
+    -moz-transition: background-color 0.2s ease-out;
+    -o-transition: background-color 0.2s ease-out;
+    transition: background-color 0.2s ease-out;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $color-desaturated-blue;
+    }
+
+    h3 {
+      margin-bottom: $spacing;
+    }
+  }
+
+  &.work {
+    background-color: $color-orange;
+  }
+  &.play {
+    background-color: $color-soft-blue;
+  }
+  &.study {
+    background-color: $color-light-red;
+  }
+  &.exercise {
+    background-color: $color-lime-green;
+  }
+  &.social {
+    background-color: $color-violet;
+  }
+  &.self-care {
+    background-color: $color-soft-orange;
+  }
+}
+
+@media (max-width: 1000px) {
+  .component-cardreport {
+    padding-top: 40px;
+
+    .report {
+      h3 {
+        margin-bottom: 10px;
+      }
+      .data {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+    }
+  }
+}

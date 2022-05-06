@@ -1,6 +1,7 @@
 @import '../theme//variables';
 
 .container-dashboard {
+  position: relative;
   display: grid;
   grid-gap: $spacing;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -18,6 +19,13 @@
       'excercise'
       'social'
       'care';
+  }
+
+  .spinner {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
   }
 
   .component-carduser {

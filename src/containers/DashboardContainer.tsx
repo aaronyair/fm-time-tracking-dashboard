@@ -7,6 +7,7 @@ import { getReports } from '../services/reports';
 import { ApiReport, Report, Timeframes } from '../models/reports.model';
 
 import './styles.scss';
+import Spinner from '../components/Spinner/Spinner';
 
 const DashboardContainer = () => {
   const [selected, setSelected] = useState<string>('daily');
@@ -48,7 +49,7 @@ const DashboardContainer = () => {
   return (
     <div className="container-dashboard">
       {loading ? (
-        <p>Cargando</p>
+        <Spinner />
       ) : (
         <>
           <CardUser

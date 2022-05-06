@@ -1,4 +1,4 @@
-@import "../../theme/colors", "../../theme/variables";
+@import '../../theme/colors', '../../theme/variables';
 
 .component-carduser {
   display: flex;
@@ -52,7 +52,7 @@
       align-items: center;
       justify-content: flex-start;
       gap: 20px;
-      
+
       img {
         height: 70px;
         width: 70px;

@@ -1,23 +1,23 @@
-@import "../theme//variables";
+@import '../theme//variables';
 
 .container-dashboard {
   display: grid;
   grid-gap: $spacing;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-areas:
-    "user work play study"
-    "user excercise social care";
+    'user work play study'
+    'user excercise social care';
 
   @media (max-width: 1000px) {
     grid-template-columns: 1fr;
     grid-template-areas:
-      "user"
-      "work"
-      "play"
-      "study"
-      "excercise"
-      "social"
-      "care";
+      'user'
+      'work'
+      'play'
+      'study'
+      'excercise'
+      'social'
+      'care';
   }
 
   .component-carduser {
